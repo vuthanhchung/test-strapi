@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applies",
+  "info": {
+    "singularName": "apply",
+    "pluralName": "applies",
+    "displayName": "Apply",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "job": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::job.job",
+      "inversedBy": "applies"
+    }
+  }
+}

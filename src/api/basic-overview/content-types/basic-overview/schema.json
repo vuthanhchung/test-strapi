@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "basic_overviews",
+  "info": {
+    "singularName": "basic-overview",
+    "pluralName": "basic-overviews",
+    "displayName": "Basic Overview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "backed_projects": {
+      "type": "integer"
+    },
+    "successful_exits": {
+      "type": "integer"
+    },
+    "hanoi_office": {
+      "type": "string"
+    },
+    "hcm_office": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "fax": {
+      "type": "string"
+    },
+    "email_for_deal": {
+      "type": "email"
+    },
+    "email_for_employment": {
+      "type": "email"
+    },
+    "website": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "hanoi_phone": {
+      "type": "string"
+    },
+    "hcm_phone": {
+      "type": "string"
+    },
+    "portfolio_year": {
+      "type": "integer"
+    },
+    "portfolio_total_project": {
+      "type": "integer"
+    },
+    "portfolio_total_invested": {
+      "type": "integer"
+    }
+  }
+}

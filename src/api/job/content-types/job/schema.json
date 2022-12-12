@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "IDG",
+        "Partner"
+      ]
+    },
+    "location": {
+      "type": "enumeration",
+      "enum": [
+        "HCM",
+        "HN",
+        "DN"
+      ]
+    },
+    "Category": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "applies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::apply.apply",
+      "mappedBy": "job"
+    }
+  }
+}
